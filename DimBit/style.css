@@ -1,0 +1,330 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:  #F5F5DC; /* Creamy background */
+}
+
+body {
+     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #333333; /* Dark blue text */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333333; /* Dark blue background */
+    color: #ffffff; /* Light gray text */
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 12px; /* Rounded bottom-left corner */
+    border-bottom-right-radius: 12px; /* Rounded bottom-right corner */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Light gray text */
+    font-weight: normal;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffffff; /*white background for hover */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    align-items: flex-start; /* Align items to the start of the flex container */
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+html, body {
+    min-height: 100%;
+    background-color: #fff8e7; /* Creamy background */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: #333; /* Dark text */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333; /* Dark background */
+    color: #fff; /* Light text */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #F5F5DC; /* Creamy text for hover */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.form-container {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    margin: 20px auto; /* Center the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    width: 90%;
+    max-width: 400px; /* Max width to control form size */
+}
+
+
+.user-form input, .user-form button {
+    display: block; /* Stack elements */
+    width: 100%; /* Full width */
+    margin: 10px 0; /* Margin for spacing */
+    padding: 10px; /* Padding for input/button size */
+}
+
+
+.info-blocks .info-block {
+    background-color: #fff; /* White background */
+    padding: 15px;
+    margin: 15px 0; /* Margin for spacing between blocks */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    width: 80%;
+    max-width: 600px; /* Adjust as necessary */
+    text-align: center; /* Center text */
+}
+
+.role-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the space between buttons */
+}
+
+.role-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.teacher {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+}
+
+.student {
+    background-color: #2196F3; /* Blue background */
+    color: white; /* White text */
+}
+
+.role-button:hover {
+    opacity: 0.8;
+}
+
+.banner-image {
+    width: 27%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 15px;
+}
+
+.info-blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.info-block, .action-block {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+}
+
+.action-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #F5F5DC;
+    color: #333;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.back-button {
+    background-color: #F5F5DC;
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.back-button:hover {
+    background-color: #333;
+    color: #F5F5DC;
+}
+
+/* Additional styles for form elements */
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"],
+.form-box button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Login prompt and link */
+.login-prompt,
+.signup-prompt {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link,
+.signup-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link:hover,
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+footer {
+    position: absolute; /* Ensure the footer is at the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333333; /* Dark blue background */
+    color: #ffffff; /* Light gray text */
+    text-align: center;
+    padding: 20px 0;
+    border-top-left-radius: 12px; /* Rounded top-left corner */
+    border-top-right-radius: 12px; /* Rounded top-right corner */
+}
+
+/* New additions to prevent overlap */
+body > header, body > main, body > footer {
+    width: 100%; /* Full width */
+}
+
+body > main {
+    margin-bottom: 60px; /* Footer height plus some extra space */
+}
+
+/* Ensure the footer sticks to the bottom of the page

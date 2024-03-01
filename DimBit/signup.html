@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fastrack - Sign Up</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <button onclick="window.location.href='index.html';" class="back-button">Back to Home</button>
+            <h1>Sign Up for Fastrack</h1>
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="form-box">
+            <form action="fastrack.html" method="POST" class="signup-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required style="width: 100%;">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required style="width: 100%;">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required style="width: 100%;">
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required style="width: 100%;">
+
+                <button type="submit" class="button">Sign Up</button>
+                <p class="signup-prompt">Already have an account? <a href="login.html" class="login-link">Log in</a></p>
+            </form>
+        </div>
+    </div>
+    <footer>
+       <p>&copy; 2024 Fastrack</p>
+    </footer>
+	<script>
+        function validateLoginForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (!username || !password) {
+                alert("Please enter both username and password.");
+                return false; // Prevent form from submitting
+            }
+            return true; // Allow form submission
+        }
+    </script>
+</body>
+</html>
+
