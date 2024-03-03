@@ -1,0 +1,431 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:  #efd9ce; /* Creamy background */
+}
+
+body {
+     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #333333; /* Dark blue text */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333333; /* Dark blue background */
+    color: #ffffff; /* Light gray text */
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 12px; /* Rounded bottom-left corner */
+    border-bottom-right-radius: 12px; /* Rounded bottom-right corner */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Light gray text */
+    font-weight: normal;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffffff; /*white background for hover */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    align-items: flex-start; /* Align items to the start of the flex container */
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+html, body {
+    min-height: 100%;
+    background-color: #efd9ce; /* Creamy background */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: #333; /* Dark text */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333; /* Dark background */
+    color: #fff; /* Light text */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #efd9ce; /* Creamy text for hover */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.form-container {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    margin: 20px auto; /* Center the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    width: 90%;
+    max-width: 400px; /* Max width to control form size */
+}
+
+        .form-box {
+            background-color: #fff; /* Set background to white */
+            border-radius: 8px; /* Set the border-radius for curved corners */
+            padding: 20px;
+            margin: 20px auto; /* Center the form */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+            width: 90%;
+            max-width: 400px; /* Max width to control form size */
+        }
+
+        .form-box input,
+        .form-box button {
+            display: block; /* Stack elements */
+            width: 100%; /* Full width */
+            margin: 10px 0; /* Margin for spacing */
+            padding: 10px; /* Padding for input/button size */
+            border: 1px solid #ddd; /* Add a subtle border to your inputs if you like */
+            border-radius: 4px; /* Slightly rounded edges for the inputs themselves */
+        }
+.user-form input, .user-form button {
+    display: block; /* Stack elements */
+    width: 100%; /* Full width */
+    margin: 10px 0; /* Margin for spacing */
+    padding: 10px; /* Padding for input/button size */
+}
+
+
+.info-blocks .info-block {
+    background-color: #fff; /* White background */
+    padding: 15px;
+    margin: 15px 0; /* Margin for spacing between blocks */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    width: 80%;
+    max-width: 600px; /* Adjust as necessary */
+    text-align: center; /* Center text */
+}
+
+.role-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the space between buttons */
+}
+
+.role-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.teacher {
+    background-color: #333333; /* Green background */
+    color: white; /* White text */
+}
+
+.student {
+    background-color: #333333; /* Blue background */
+    color: white; /* White text */
+}
+
+.role-button:hover {
+    opacity: 0.8;
+}
+
+.banner-image {
+    width: 27%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 15px;
+}
+
+.info-blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.info-block, .action-block {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+}
+
+.chat-container {
+    background-color: #ffffff; /* White background for the chat container */
+    width: 50%; /* Chat container takes up half the width of the main container */
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto; /* Or set a fixed height if you prefer */
+}
+
+.chat-box {
+    height: 300px; /* Or as per your design requirement */
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Adjust the input container to align the input and button */
+.input-container {
+    display: flex;
+    gap: 10px;
+	
+}
+
+.user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /* Rest of your styles */
+}
+
+.send-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    /* Rest of your styles */
+}
+
+}
+
+.user-message {
+    text-align: right;
+    margin: 5px;
+    padding: 5px;
+    background-color: #f1f1f1;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.ai-message {
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+    background-color: #d1e8ff;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.action-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.button:hover {
+	opacity: 0.8;
+}
+.response-container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.response-box {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.submit-button {
+    background-color: #333333;
+    color: #ffffff;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.submit-button:hover {
+opacity: 0.8;
+}
+
+/* Additional styles for form elements */
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"],
+.form-box button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Login prompt and link */
+.login-prompt,
+.signup-prompt {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link,
+.signup-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link:hover,
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+.response-container {
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin-top: 20px; /* Adjust as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+
+footer {
+    position: absolute; /* Ensure the footer is at the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333333; /* Dark blue background */
+    color: #ffffff; /* Light gray text */
+    text-align: center;
+    padding: 20px 0;
+    border-top-left-radius: 12px; /* Rounded top-left corner */
+    border-top-right-radius: 12px; /* Rounded top-right corner */
+}
+
+/* New additions to prevent overlap */
+body > header, body > main, body > footer {
+    width: 100%; /* Full width */
+}
+
+body > main {
+    margin-bottom: 60px; /* Footer height plus some extra space */
+}
+
+/* Ensure the footer sticks to the bottom of the page

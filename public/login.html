@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fastrack - Login</title>
+</head>
+<body onload="document.getElementById('username').focus();">
+    <header>
+        <div class="header-content">
+
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+					<li><a href="index.html">|</a></li>
+                    <li><a href="login.html">Login</a></li>
+					<li><a href="index.html">|</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="form-box">
+			<form action="/login" method="POST" class="login-form" onsubmit="return validateLoginForm()">
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username" required>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required>
+				<button type="submit" class="button">Login</button>
+				<p class="signup-prompt">Don't have an account? <a href="signup.html" class="signup-link">Sign Up</a></p>
+			</form>
+		</div>
+    </div>
+    <footer>
+       <p>&copy; 2024 Fastrack</p>
+    </footer>
+
+    <script>
+        function validateLoginForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (!username || !password) {
+                alert("Please enter both username and password.");
+                return false; // Prevent form from submitting
+            }
+            return true; // Allow form submission
+        }
+    </script>
+</body>
+</html>
